@@ -1,7 +1,7 @@
 package ru.butakov.otus.hw01.service;
 
-import ru.butakov.otus.hw01.service.domain.Question;
+import ru.butakov.otus.hw01.service.domain.QuestionDto;
 
 public interface QuizPresenter {
-    void showQuestion(Question question);
+    void showQuestion(QuestionDto questionDto);
 }

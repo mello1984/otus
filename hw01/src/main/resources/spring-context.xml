@@ -5,9 +5,9 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="quizPresenter" class="ru.butakov.otus.hw01.presenter.CliQuizPresenterImpl"/>
-    <bean id="quizProvider" class="ru.butakov.otus.hw01.provider.CsvQuizProviderImpl"/>
+    <bean id="quizProvider" class="ru.butakov.otus.hw01.provider.csv.CsvQuizProviderImpl"/>
     <bean id="quizService" class="ru.butakov.otus.hw01.service.QuizServiceImpl">
         <constructor-arg ref="quizProvider"/>
-        <constructor-arg ref="quizProvider"/>
+        <constructor-arg ref="quizPresenter"/>
     </bean>
 </beans>
